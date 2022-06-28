@@ -1,0 +1,18 @@
+p{
+    color:greenyellow;
+    font-size: 30px;
+    background-color:blue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.colorTituloRojo{
+    color:red;
+    background-color:gold;
+
+}
+
+#parrafoPrincipal{
+    color:rgb(231, 99, 99) ;
+    background-color: black;
+}
