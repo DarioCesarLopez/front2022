@@ -6,13 +6,69 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.colorTituloRojo{
+ol {
+    list-style-type: upper-roman;
+    font-size: 15px;
+    color: grey;
+}
+ul {
+    list-style-type:circle;
+    font-size: 20px;
+   
+}
+.listStyles {
+    text-align: center;
+}
+
+
+.subTituloRojo {
     color:red;
     background-color:gold;
+    font-size: 22px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-#parrafoPrincipal{
-    color: whitesmoke ;
+.parrafo1 {
+    color: rgb(240, 93, 88);
     background-color: black;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    text-align: left;
 }
+
+.parrafo2 {
+    color: black;
+    background-color: grey;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    text-align: left;
+    text-decoration:dotted;
+}
+
+.parrafo3 {
+    color: grey;
+    background-color: rgb(27, 13, 13);
+    font-size: 23px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    text-align:center;
+}
+
+
+#Principal {
+    color: whitesmoke ;
+    background-color: red;
+    font-size: 35px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagenCentral {
+    text-align: center;
+}
+
+.imgTama {
+    width: 30%;
+    height: auto;
+
