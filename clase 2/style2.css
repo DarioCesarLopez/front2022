@@ -55,6 +55,14 @@ ul {
     text-align:center;
 }
 
+.cabeza{
+    height: 30px;
+    border:rgb(240, 93, 88);
+    background-color: aqua;
+}
+
+
+
 
 #Principal {
     color: whitesmoke ;
@@ -71,4 +79,3 @@ ul {
 .imgTama {
     width: 30%;
     height: auto;
-
