@@ -1,6 +1,7 @@
 
 .boxStandar{
   margin-left: 35px;
+  margin-top: 5px;
 }
 
 .contenedor {
@@ -23,7 +24,7 @@
 
 .box1{
     float: left;
-    margin-left: 35px;
+    margin-left: 35px; 
     background-color: rgb(221, 217, 217);
     display: inline-block;
     width: 40%;
@@ -45,9 +46,8 @@
     border: 3px solid rgb(95, 78, 78);
     display: inline-block;
     width: 15%;
-    height: 700px;
-    margin-top: 5px;
-
+    height: 610px;
+    margin-top: 25px;
 }
 
 #titulo {
@@ -79,7 +79,7 @@
 .imgTama {
     width: 100%;
     height: auto;
-}    
+}
 
 .transparente {
     color: transparent;
