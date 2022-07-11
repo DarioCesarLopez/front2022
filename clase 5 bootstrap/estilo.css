@@ -1,49 +1,114 @@
-
 .texBlanco {
-    color: white;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 60%;
-      font-weight: bold;
-    
-  }
-  .texNegro {
-    color: black;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 70%;
-      font-weight: bold;
-  }
+  color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    font-weight: bold;
   
-  
-  .divcolor1 {
-      background-color: rgb(208, 212, 212);
-      border: 1px solid black;
-      border-radius: 3px 3px;
-  }
-  
-  .divcolor2 {
-      background-color: green;
-      border: 1px solid black;
-       text-align: center;
-      align-content: center;
-  
-    
-  }
-  
-  .divlogo {
-      background-color: blue;
+}
+.texNegro {
+  color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+
+.divcolor1 {
+    background-color: rgb(208, 212, 212);
     border: 1px solid black;
-       text-align: center;
-    align-content: center;
-  }
-  .divmenu {
-      background-color: rgb(116, 7, 7);
+    border-radius: 5px 5px;
+}
+
+.divcolor2 {
+    background-color: green;
     border: 1px solid black;
-       text-align: left;
+     text-align: center;
     align-content: center;
-  }
-  .espace {
-    margin-bottom: 10px;
-  }  
-  .top {
-    margin-top: 100px
-  }
+
+  
+}
+
+.divlogo {
+    background-color: blue;
+  border: 1px solid black;
+     text-align: center;
+  align-content: center;
+}
+.divmenu {
+    background-color: rgb(116, 7, 7);
+  border: 1px solid black;
+     text-align: left;
+  align-content: center;
+}
+.espace {
+  margin-bottom: 10px;
+}
+
+.paddingMaster {
+padding-left: 2px;
+ padding-right: 2px;
+ }
+
+.padding-box {
+  padding-top: 1%
+}
+.padding-texto {
+  padding-top: 2%
+}
+.padding-texto2 {
+  padding-top: 5%
+}
+.div-izq {
+border-radius: 5px 5px;
+background-color: rgb(66, 59, 59);
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 250px;
+}
+.div-cen {
+border-radius: 5px 5px;
+background-color: rgb(46, 200, 228);
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 250px;
+margin-left: 0%;
+}
+.div-der {
+border-radius: 5px 5px;
+background-color: orangered;
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 250px;
+margin-left: 0%;
+}
+.top {
+margin-top: 10px;
+}
+.div-izq2 {
+border-radius: 5px 5px;
+background-color: green;
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 250px;
+}
+.div-der2 {
+border-radius: 5px 5px;
+background-color: brown;
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 250px;
+margin-left: 0%;
+}
+.divcolorFooter {
+border-radius: 5px 5px;
+background-color: aqua;
+border: 1px solid black;
+text-align: left;
+align-content: center;
+height: 70px;
+}
