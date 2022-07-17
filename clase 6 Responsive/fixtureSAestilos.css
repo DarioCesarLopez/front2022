@@ -1,23 +1,40 @@
-header{
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+
+.header{
     background-color: rgb(94, 87, 87);
 
 }
 
-.col {
+.boxA {
+    border-color: red;
+    border: solid 2px;
+}
+
+.boxB {
     border-color: black;
-    border: solid;
-
-}
-/* en movil ocultamos el div A */
-.div-A {
-    display: none;
- }
-
-@media screen and (min-width: 380px){
-
-    /* en desktop vemos el div A */
-    .div-A {
-       
-    }
+    border: solid 2px;
 }
 
+.boxX {
+    border-color: pink;
+    border: dashed 1px;
+}
+
+.boxC {
+    border-color: blue;
+    border: solid 2px;
+}
+
+.boxD {
+    border-color: blue;
+    border: solid 2px;
+}
+.boxE {
+    border-color: green;
+    border: solid 2px;
+}

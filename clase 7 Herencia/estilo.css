@@ -1,0 +1,19 @@
+.content{
+    background-color: #4346;
+
+  }
+  
+  div > p {   background-color: yellow;
+  } 
+  
+  div + h2 {   background-color: red;
+  font-size: 100.988px;}
+  
+  div ~ h2 {  background-color: orange;  }
+  
+  p span { color: blue; }
+  
+  .boton:hover{
+     background-color: red;
+   }
+  
