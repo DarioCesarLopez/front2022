@@ -24,5 +24,3 @@ btn_parrafo.addEventListener("click", crearParrafo);
         nuevoParrafo.innerHTML = inputParrafo.value;
         agregarParrafo.appendChild(nuevoParrafo);  
     }   
-
-

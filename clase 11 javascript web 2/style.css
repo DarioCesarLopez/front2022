@@ -1,4 +1,8 @@
-.border{
-    border-color:#dc3545;
-    border: 20px;
+.borde {
+    border: 2px solid rgb(9, 109, 202);
+    padding: 2%;
+}
+
+.margenTop {
+    margin-top: 2%;
 }
