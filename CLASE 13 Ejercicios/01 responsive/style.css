@@ -1,0 +1,53 @@
+.middle-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    border: 3px solid red;
+    height: 200px;
+}
+
+.a1 {
+    background-color: pink;
+}
+
+.a2 {
+   display: flex;
+}
+
+div {
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.pie {
+   background-color:  blue;
+}
+
+@media only screen and (min-width: 600px) {
+    .middle-wrapper {
+        flex-direction: row;
+    }
+
+    .centro {
+        flex-grow: 5;
+        background-color: yellow;
+    }
+
+    #main {
+        display: flex;
+        border: 5px solid green;
+        height: 400px;
+    }
+
+    .bLateral {
+        flex-grow: 1;
+        background-color: violet;
+    }
+
+
+
+
+}
+
