@@ -1,0 +1,13 @@
+.ocultar{
+    display:none;
+}
+
+.azul_negrita {
+    font-size:larger;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-variant: inherit;
+    color: blue;
+
+}
