@@ -1,3 +1,36 @@
 body {
     background-color: rgb(153, 145, 145);
 }
+
+.cont {
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+header {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.titulo {
+    color: red;
+}
+
+
+.central {
+    width: 500px;
+    align-self: center;
+    border: 1px solid red;
+
+}
+
+.imagen1 {
+    width: 300px;
+
+}
+
