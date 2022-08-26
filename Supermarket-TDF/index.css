@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+
+  }
+  
+  /* NAVBAR */
+  #navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 15vh;
+  }
+  
+  #navbar .logo {
+    display: flex;
+   align-self: center;
+    height: 20%;
+  }
+
+  #logo {
+    width: 40%;
+    align-items: center;
+  }
+
+  
+  #navbar h1 a {
+    color: orange;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+  
+  #navbar ul li a {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  #navbar ul li a:hover {
+    color: #f14a16;
+  }
+  
+  #navbar ul li a.current {
+    color: #fc9918;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #f18016;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+  }
+  
+  /* SECTION */
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* HOME */
+  .fondo_inicio {
+    background-image: linear-gradient(
+        rgba(45, 42, 42, 0.45),
+        rgba(30, 28, 28, 0.45)
+      ),
+      url("supermarket03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+  }
+  
+  .fondo_inicio p {
+    padding: 20px;
+  }
+  
+  .fondo_inicio .container {
+    flex-direction: column;
+  }
+  
+  /* COMPRAR */
+
+  .fondo_comprar {
+    background-image: linear-gradient(
+      rgba(45, 42, 42, 0.45),
+      rgba(30, 28, 28, 0.45)
+      ),
+      url("supermarket01.jpg");
+    background-repeat: no-repeat;
+    background-size:70%;
+    background-position: center;
+    height: 100%;
+    padding: 340px 40px;
+    text-align: center;
+    color: white;
+  }
+  
+  .fondo_comprar p {
+    padding: 20px;
+  }
+  
+  .fondo_comprar .container {
+    flex-direction: column;
+  }
+
+  #comprar-container {
+    height: 100px;
+    width: 100%;
+  }
+  
+  #div-productos {
+    width: 40%;
+    margin: 20px auto;
+  }
+  
+  .articulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+  }
+  
+  .articulo p {
+    width: 40%;
+    font-size: 20px;
+  }
+  
+  .articulo input {
+    width: 20%;
+  }
+  
+  .boton-primario {
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid #f8fc18;
+    border-radius: 5px;
+    background-color: #bb18fc;
+  }
+  
+  #btn_comprar:hover {
+    border: 3px solid #16f14d;
+    background-color: #1637f1;
+  }
+  
+  /* CONTACTO */
+  #contacto-container {
+    height: 75vh;
+    width: 100%;
+  }
+  
+  #contacto-container form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  #contacto-container form label {
+    margin: 10px 0;
+  }
+  
+  #contacto-container form button {
+    margin: 20px auto;
+    width: fit-content;
+  }
