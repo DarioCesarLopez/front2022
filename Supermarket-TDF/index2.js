@@ -23,7 +23,7 @@ function agregarAlCarrito(){
     // creamos el vid contenedor para los productos / artículos
     let div_items = document.createElement("div");
     div_items.classList.add("articulo");
-    div_items.id = `producto-${i}`;
+    div_items.id = `producto-${i}`; 
 
     // creamos el texto "p" nombre de los productos
     let nombreProducto = document.createElement("p");
@@ -46,19 +46,26 @@ function agregarAlCarrito(){
     div_items.appendChild(nombreProducto);
     div_items.appendChild(precioProducto);
     div_items.appendChild(cantidad);
-    divProductos?.appendChild(div_items)
+    divProductos.appendChild(div_items)
     }
 }
 
+// creamos la funcion compar
 function comprar(){
     for (let i = 0; i < stock.length; i++) {
       let cantidad = document.getElementById(`cantidad-${i}`);
-      let cantElegidda = Number(cantidad.value);
-      if (cantElegidda > 0) {
+      let cantElegida = Number(cantidad.value);
+      if (cantElegida > 0) {
+        
         console.log(
-          `Ha comprado ${cantElegidda} unidades de: ${productos[i]}`
+          `Ha comprado ${cantElegida} unidades de: ${productos[i]}`
         );
-        total += precioArticulo[i] * cantElegidda;
+
+        //document.querySelector("h5").innerHTML = `Ha comprado ${cantElegida} unidades de: ${productos[i]}`;
+
+        document.querySelector("h5").innerHTML = "Ha comprado" +" "+ `${cantElegida}`+" " + "unidades de: " + `${productos[i]}` +" "+"- precio unitario:"+" $"+precioArticulo[i];
+        
+        total += precioArticulo[i] * cantElegida;
       }
     }
     if (total > 0) {
@@ -67,22 +74,13 @@ function comprar(){
       console.log(`El valor de la celda no puede ser cero`);
     }
 
-    document.querySelector("h4").innerHTML = "EL total de su compra es: $ "+`${total}`;
+    document.querySelector("h4").innerHTML = "Gracias por comprar con nosotros!! El total de su compra es: $ "+`${total}`;
 
-    //et totalDeCompra = document.createElement("h3");
-    //totalDeCompra.innerHTML =  
-    //totalDeCompra.appendChild(`${total}`);
-    //document.querySelector("h1").innerHTML
-   
-
-  };
+    }
   
+  // "su compra es:" + `${cantElegida}` + "unidades de:" + `${productos[i]}`  
+
   // aqui veremos los artículos disponibles en el html..
-  // window.addEventListener("load", agregarAlCarrito);
+
   window.onload = agregarAlCarrito();
  
-
-
-
-
-
