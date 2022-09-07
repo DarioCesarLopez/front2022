@@ -4,16 +4,13 @@ botonComprar.addEventListener("click", comprar);
 const divProductos = document.getElementById("div-productos");
 
 let total=0;
+let lista = 0;
 // arrgeglo de precios
 let precioArticulo = [910, 1050, 670, 665, 790, 1225, 480];
 // arreglo de productos
 let productos = ["vino Alma Mora malbec 750 cc","Alfajor Tatín - caja","Yerba Rosamonte 1kg","Aceite de girasol","Queso Saint Pauli 1kg","Rollo paple cocina Ultra","Dulce de Arandanos" ];
 // arreglo de stock de productos
 let stock = [26, 23, 19, 11, 16, 15, 22];
-
-
-// let botonAgregar = document.getElementById("btn_agregar");
-// botonAgregar?.addEventListener("click", agregar);
 
 
 // funcion par ver los productos disponibles (se cargan desde los arreglos)
@@ -50,8 +47,12 @@ function agregarAlCarrito(){
     }
 }
 
+
 // creamos la funcion compar
 function comprar(){
+
+  let elementosDelCarrito=[];  
+
     for (let i = 0; i < stock.length; i++) {
       let cantidad = document.getElementById(`cantidad-${i}`);
       let cantElegida = Number(cantidad.value);
@@ -59,13 +60,11 @@ function comprar(){
         
         console.log(
           `Ha comprado ${cantElegida} unidades de: ${productos[i]}`
-        );
-
-        //document.querySelector("h5").innerHTML = `Ha comprado ${cantElegida} unidades de: ${productos[i]}`;
-
+        );    
         document.querySelector("h5").innerHTML = "Ha comprado" +" "+ `${cantElegida}`+" " + "unidades de: " + `${productos[i]}` +" "+"- precio unitario:"+" $"+precioArticulo[i];
         
         total += precioArticulo[i] * cantElegida;
+    
       }
     }
     if (total > 0) {
@@ -75,10 +74,27 @@ function comprar(){
     }
 
     document.querySelector("h4").innerHTML = "Gracias por comprar con nosotros!! El total de su compra es: $ "+`${total}`;
-
+    
+    function agregarAlCarro () {
+      let elementoAlCarrito = document.getElementById("div-productos").value;
+      elementosDelCarrito.push(elementoAlCarrito);
     }
-  
-  // "su compra es:" + `${cantElegida}` + "unidades de:" + `${productos[i]}`  
+      
+    function mostrarCarro () {
+      let resultado = document.getElementById("resultado"); 
+
+        for ( const elementoAlCarrito of elementosDelCarrito) {
+          let datoParrafo = document.createElement("p");
+          datoParrafo.innerText = elementoAlCarrito;
+
+          resultado.appendChild(datoParrafo);
+        }
+    }
+       
+  }
+
+    
+
 
   // aqui veremos los artículos disponibles en el html..
 

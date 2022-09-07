@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "ascii-art": "^2.8.5",
+    "readline-sync": "^1.4.10"
+  },
+  "name": "clase-poo",
+  "version": "1.0.0",
+  "main": "miPrimerEjercicio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
