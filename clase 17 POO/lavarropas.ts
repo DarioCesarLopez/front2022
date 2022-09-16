@@ -19,7 +19,7 @@ class Lavarropas {
     if (this.encendida === false) {
         console.log("Oprima el boton de encendido");
     }
-    else (this.encendida === true);{
+    else (this.encendida === true){
         console.log("Elija un programa");
      }  
     }
@@ -65,5 +65,3 @@ lavarropas.secar();
 lavarropas.funcioando();
 lavarropas.ficha_tecnica();
 
-console.log(lavarropas.marcaComercial);
-console.log(lavarropas.num_serie);
