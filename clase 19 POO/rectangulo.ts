@@ -32,7 +32,7 @@ class Rectangulo { // inicio del objeto rectangulo
     }
 
     // Compararlo con otro rectangulo. Devolver 1 si es mayor, 0 son iguales y -1 si es menor.
-    public compararAreas() {
+    public compararAreas(rectangulo1_1:Rectangulo, rectanguloAcomparar:Rectangulo) {
         
         let devolver: number;
             
@@ -41,11 +41,11 @@ class Rectangulo { // inicio del objeto rectangulo
         }
       
         if (rectangulo1_1.getArea() < rectanguloAcomparar.getArea()) {
-            return -1;
+            devolver = -1;
           }
 
         if (rectangulo1_1.getArea() > rectanguloAcomparar.getArea()) {
-            return 1;
+            devolver = 1;
           }
         }    
     
@@ -53,7 +53,7 @@ class Rectangulo { // inicio del objeto rectangulo
     public esUnCuadrado():boolean {
         
         let esCuadrado = Number(this.base) == Number(this.altura);
-        return esCuadrado
+        return esCuadrado;
     }  
 
     //Determinar si esta acostado o parado(si el alto es mas que el ancho)
@@ -61,7 +61,7 @@ class Rectangulo { // inicio del objeto rectangulo
     public estaVertical(): boolean {
 
         let vertical = Number(this.base) < Number(this.altura);
-        return vertical
+        return vertical;
     } 
       
 
@@ -73,7 +73,7 @@ let rectanguloAcomparar = new Rectangulo(14, 26);
 
 console.log("El area del su figura es", rectangulo1_1.getArea(), "m²");
 console.log("El area del rectangulo comparativo es", rectanguloAcomparar.getArea(), "m²");
-console.log("La comparacion de las areas es: ", rectangulo1_1.compararAreas());
+console.log("La comparacion de las areas es: ", rectangulo1_1.compararAreas(rectangulo1_1, rectanguloAcomparar));
 console.log("¿Su figura es un cuandrado?", rectangulo1_1.esUnCuadrado());
 console.log("¿Su figura esta en forma vertical?", rectangulo1_1.estaVertical());
 

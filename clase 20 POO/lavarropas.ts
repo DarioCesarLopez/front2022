@@ -11,7 +11,7 @@ class Lavarropas { // inicio del objeto
     private marcaComercial: string;
     private num_serie: number;
 
-// creamos el constructor
+// creamos el constructor SIRVE PARA SETEAR VALORES "INICIALES" DEL OBJETO
     constructor(marca:string,serieNumber:number,prog:number){
         this.encendida = true;
         this.marcaComercial =  marca;
@@ -23,12 +23,12 @@ class Lavarropas { // inicio del objeto
 
    public get_encenderApagar(): boolean {
     
-    let estado_ON = this.encendida;
-    let estado_OFF =this.encendida;
     if (this.encendida === true) {
-        return estado_ON;
-    } else
-        return estado_OFF;
+        this.encendida = true;
+    } else {
+        this.encendida = false;
+    }
+        
     }
 
     public set_encenderApagar(encendida:boolean) {
@@ -92,7 +92,7 @@ let lavarropas = new Lavarropas("LG Direct Drive 8.5",1380140076, 5);
 console.log("Ficha técnica: ",lavarropas.tostring());
 console.log("El lavarropas esta: ",lavarropas.get_encenderApagar());
 console.log("El progama de lavado es: ",lavarropas.get_programar());
-console.log("NOmbre comercial: ",lavarropas.get_ficha_tecnica());
+console.log("Nombre comercial: ",lavarropas.get_ficha_tecnica());
 
 
 
