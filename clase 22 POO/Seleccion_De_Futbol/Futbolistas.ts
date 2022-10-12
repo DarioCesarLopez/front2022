@@ -5,11 +5,13 @@ export class Futbolista extends Seleccion {
     private posicion: string;
     private dorsal: number; //numero de camiseta
 
-    constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:Date,pasaportePam:number,posicion:string,dorsal:number){
+    constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:string,pasaportePam:number,posicion:string,dorsal:number){
         super(nombrePam,apellidoPam,fecha_nacimientoPam,pasaportePam);
         this.posicion = posicion;
         this.dorsal = dorsal;
     }
+
+    
 
     public numeroDeCamiseta(): number{
         return this.dorsal;

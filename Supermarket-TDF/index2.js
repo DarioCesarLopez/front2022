@@ -51,7 +51,8 @@ function agregarAlCarrito(){
 // creamos la funcion compar
 function comprar(){
 
-  let elementosDelCarrito=[];  
+  let elementosDelCarrito=[];
+  
 
     for (let i = 0; i < stock.length; i++) {
       let cantidad = document.getElementById(`cantidad-${i}`);
@@ -90,12 +91,9 @@ function comprar(){
           resultado.appendChild(datoParrafo);
         }
     }
-       
-  }
 
-    
-
-
+}  
+  
   // aqui veremos los artículos disponibles en el html..
 
   window.onload = agregarAlCarrito();

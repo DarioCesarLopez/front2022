@@ -5,7 +5,7 @@ export class Masajista extends Seleccion {
     private nacionalidad: string;
     private aniosDeExperiencia: number;
 
-    constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:Date,pasaportePam:number,nacionalidad:string,experiencia:number){
+    constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:string,pasaportePam:number,nacionalidad:string,experiencia:number){
         super(nombrePam,apellidoPam,fecha_nacimientoPam,pasaportePam);
         this.nacionalidad = nacionalidad;
         this.aniosDeExperiencia = experiencia;

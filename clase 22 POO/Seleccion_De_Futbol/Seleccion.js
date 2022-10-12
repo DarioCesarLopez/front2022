@@ -6,7 +6,7 @@ var Seleccion = /** @class */ (function () {
         this.nombre = nombrePam;
         this.apellido = apellidoPam;
         this.pasaporte = pasaportePam;
-        this.fecha_nacimiento = fecha_nacimientoPam;
+        this.fecha_nacimiento = new Date(fecha_nacimientoPam);
     }
     Seleccion.prototype.obtener_nombre = function () {
         return this.nombre;
@@ -20,13 +20,17 @@ var Seleccion = /** @class */ (function () {
     Seleccion.prototype.modificar_apellido = function (apellido) {
         this.apellido = apellido;
     };
-    Seleccion.prototype.fechaDeNacimiento = function () {
-        return this.fecha_nacimiento.toString();
+    Seleccion.prototype.getFechaDeNacimiento = function () {
+        return this.fecha_nacimiento;
+    };
+    Seleccion.prototype.getFechaNacimiento = function () {
+        var fecha = new Date();
+        return fecha.toLocaleDateString();
     };
     Seleccion.prototype.numero_pasaporte = function () {
         return this.pasaporte;
     };
-    Seleccion.prototype.edad = function () {
+    Seleccion.prototype.get_edad = function () {
         var hoy = new Date();
         return hoy.getFullYear() - this.fecha_nacimiento.getFullYear();
     };

@@ -37,6 +37,10 @@ export class Gestor_futbolista {
       }
       this.listaDeFutbolistas[pos].editarNumCamiseta(dorsal);
     }
+
+    public agregarFutbolista(jugador_nuevo:Futbolista): void{
+        this.listaDeFutbolistas.push(jugador_nuevo);
+    }
   
   
   } // fin gestor futbolistas /////////////////

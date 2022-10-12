@@ -1,15 +1,16 @@
+ 
 export  class Seleccion {
         private nombre: string;
         private apellido: string;
-        private fecha_nacimiento: Date;
+        private fecha_nacimiento:Date;
         private pasaporte: number;
 
 
-        constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:Date,pasaportePam:number) {
+        constructor(nombrePam:string,apellidoPam:string,fecha_nacimientoPam:string,pasaportePam:number) {
             this.nombre = nombrePam;
             this.apellido = apellidoPam;
             this.pasaporte = pasaportePam;
-            this.fecha_nacimiento = fecha_nacimientoPam;
+            this.fecha_nacimiento = new Date (fecha_nacimientoPam)
         }
 
         public obtener_nombre(): string {
@@ -26,15 +27,20 @@ export  class Seleccion {
             this.apellido = apellido;
         } 
         
-        public fechaDeNacimiento():string {
-            return this.fecha_nacimiento.toString();
+        public getFechaDeNacimiento():Date {  // FECHA DE NACIMIENTO 1
+            return this.fecha_nacimiento;
         }
-    
+
+        public getFechaNacimiento(): string{    // FECHA DE NACIMIENTO 2    this.fecha_nacimiento
+            let fecha = new Date();
+            return fecha.toLocaleDateString();
+        }
+  
         public numero_pasaporte(): number {
             return this.pasaporte;
         }
     
-        public edad():number {
+        public get_edad(){
             let hoy:Date = new Date();
             return hoy.getFullYear() - this.fecha_nacimiento.getFullYear();  
         }

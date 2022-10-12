@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Supermearket Order Now</title>
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="comprar copy.html" class="activo">Ir al carrito de compras</a></li>
+          <li><a href="contacto.html">Nuestros contactos</a></li>
+        </ul>
+
+        <section id="logo">
+          <img class="logo" src="logoOrderNow.png" alt="Order Now logo">
+        </section>
+      </nav>
+    </header>
+   
+    <div class="fondo_comprar">
+      <section id="comprar-container">
+      
+       <form class="row" id="formDetalle">
+          
+          <div class="form-group col-md-5">
+            <label for="">Producto descripción</label>
+            <select id="selectDescripcion">
+              <option value="0">--Seleccione un producto--</option>
+                  
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="">Cantidad</label>
+            <input type="number" class="form-control" id="inputCantidad">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="">Precio Unitario</label>
+            <input type="number" class="form-control" id="inputPunitario" disabled>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="">Precio Tolal</label>
+            <input type="number" class="form-control" id="inputPtotal" disabled>
+          </div>
+          <div class="form-group col-md-1">
+              <button id="btn_comprar" class="btn_comprar" type="submit">Agregar</button>
+          </div>
+       </form>
+      </section>
+      <section id="listaCompra">
+        <div class=" col listaCompra">
+          
+          <table class="table tablaCompra">
+            <thead>
+              <tr>
+                <th>Cantidad</th>
+                <th>Descripción</th>
+                <th>Precio Unitario</th>
+                <th>Precio Total</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+              <tbody class="tablaCompra" id="cuerpoTabla">
+
+              </tbody>
+          </table>
+
+        </div>
+        <button id="btn_comprar" class="boton-primario">Comprar</button>
+      </section>
+    </div>
+
+    <h4></h4>
+    <h5 ></h5>
+    <div id = "resultado"></div>
+   
+    <footer>
+        
+      <p>Realizado Por Dario López comision A 2022</p>
+    </footer>
+    <script src="index2 copy.js"></script>
+  </body>
+</html>
+

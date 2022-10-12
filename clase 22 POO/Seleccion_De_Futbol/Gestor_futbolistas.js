@@ -30,6 +30,9 @@ var Gestor_futbolista = /** @class */ (function () {
         }
         this.listaDeFutbolistas[pos].editarNumCamiseta(dorsal);
     };
+    Gestor_futbolista.prototype.agregarFutbolista = function (jugador_nuevo) {
+        this.listaDeFutbolistas.push(jugador_nuevo);
+    };
     return Gestor_futbolista;
 }()); // fin gestor futbolistas /////////////////
 exports.Gestor_futbolista = Gestor_futbolista;
